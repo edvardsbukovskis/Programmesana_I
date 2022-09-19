@@ -1,0 +1,1 @@
+Uzrakstīt programmu, kas izveido masīvu ar 3 integer vērtībām (vērtības nosakat paši). Programmai vajag atrast lielāko un mazāko vērtību šajā masīvā
