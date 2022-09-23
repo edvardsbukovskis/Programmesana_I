@@ -1,0 +1,1 @@
+Uzrakstīt programmu, kur lietotājs ievada skaitli un programma izprintē visus pāra skaitļus līdz un ieskaitot ievadītajam.
