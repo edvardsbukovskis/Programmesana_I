@@ -1,0 +1,8 @@
+1.uzd
+Uzrakstīt programmu, kas izdrukā skaitļus no 10 līdz 0, izmantojot for ciklu
+
+2.uzd
+Uzrakstīt programmu, kas izdrukā skaitļus no 0, kas palielinās par 2 līdz lietotaja ievadītajam veselam skaitlim. Izmantojot for ciklu.
+
+3.uzd
+Uzrakstīt programmu, kur leitotājs ievada divus veselus skaitļus. Programmai jāatrod šo divu skaitļu visi kopīgie dalītāji.
