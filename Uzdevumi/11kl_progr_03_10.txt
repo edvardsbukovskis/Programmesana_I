@@ -1,0 +1,7 @@
+1.Uzrakstīt programmu, kas izreķina ievadītā skaitļa faktoriālu.
+2. Uzrakstīt programmu, kas drukā konsolē Fibonacci skaitļus līdz n-tajam ievadītajam skaitlim
+3. Uzrakstīt programmu, kas dabū lietotāja ievadīto skaitli n, un, balstoties uz skaitli n izprintē zvaigžņu piramīdu, piemēram, ja ievada n=4:
+*
+**
+***
+****
