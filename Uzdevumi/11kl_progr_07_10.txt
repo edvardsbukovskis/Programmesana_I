@@ -1,0 +1,1 @@
+Izveidot funkciju, kas pārveido veselu skaitli binārajā skaitlī.
