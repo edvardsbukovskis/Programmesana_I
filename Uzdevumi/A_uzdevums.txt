@@ -1,0 +1,2 @@
+Doti divi naturāli skaitļi. Atrast visus abu skaitļu kopīgus dalītājus.
+Jābūt iespējai programmu izpildīt atkārtoti, neizejot no programmas.

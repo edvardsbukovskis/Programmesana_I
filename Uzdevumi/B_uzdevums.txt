@@ -1,0 +1,2 @@
+Dots naturāls skaitis n. Atrast visus tādu naturālu skaitļu trijniekus a, b, c , a <= b <= c <= n, lai a^2+b^2=c^2.
+Risinājumā izmantot funkciju, kas par trīs skaitļiem noskaidro, vai tie atbilst nosacījumam.
