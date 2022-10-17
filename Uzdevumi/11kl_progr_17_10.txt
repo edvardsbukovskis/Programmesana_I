@@ -1,0 +1,1 @@
+Uztaisīt linked list datu struktūru no 5 vērtībām. Implementēt iespēju lietotājam pašam ierakstīt visas kastīšu data vērtības.
