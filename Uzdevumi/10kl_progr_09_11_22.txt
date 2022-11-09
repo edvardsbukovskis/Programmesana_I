@@ -1,0 +1,2 @@
+Izveidot klasi "cetrsturis", kur tiek nodefinēti malu garumi. Izveidot klasei 2 metodes(funkcijas), kuras aprēķina perimetru un laukumu.
+2. Izveidot apakšklasi "trijsturis", kas apreķina trijstūra perimetru un laukumu.
