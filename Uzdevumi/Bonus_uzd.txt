@@ -1,0 +1,2 @@
+Izvadīt dotajā teksta failā f sastapto latīņu alfabēta burtu lietojuma biežuma tabulu (neievērojot lielos un mazos burtus) failā f1.
+Tabulai jābūt sakārtotai alfabētiski.
