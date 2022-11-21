@@ -1,0 +1,5 @@
+Uzrakstīt programmu, kas rēina polinoma vienādojumu. Izmantot Switch-case izteiksmi, lai pārbaudītu gadījumus, kad nevarēs izrēķināt saknes. Lietotājs ievada 3 polinoma vērtības (skaitļus)
+3x^2 + 4x -5 
+D = b^2-4ac
+x1 = (-b+sqrt(D))/(2a)
+x2 = (-b-sqrt(D))/(2a)
