@@ -1,0 +1,35 @@
+Uzrakstīt programmu/funkciju, kas inputā saņem tekstu(string) un atgriež 3 garākos vārdus šajā tekstā. 
+Šajā uzdevumā tiek realizets steka princips. Risinajumā var izmantot masīva metodes .insert() un .pop() un .append()
+Lai sadalītu tekstu pa vārdiem var izmantot funkciju .split()
+
+
+def atrast_vardus(string):
+  vardi = string.split(' ')
+  garakie_vardi = ['', '', '']
+
+  for vards in vardi:
+    # 1. ja vārds ir garāks par esošo garāko vārdu:
+    if len(vards) > len(garakie_vardi[0]):
+      garakie_vardi.insert(0, vards)
+      garakie_vardi.pop()
+
+    # 2. ja vārds ir tādā pašā garumā ka esošais garākais vārds
+    elif len(vards) == len(garakie_vardi[0]):
+      garakie_vardi.insert(0, vards)
+      garakie_vardi.pop()
+
+    # 3. ja vārds ir īsāks par esošo garāko un īsāks par otro, bet garāks par pēdējo
+    elif (len(vards) < len(garakie_vardi[0])) and (len(vards) < len(garakie_vardi[1])) and (len(vards) >= len(garakie_vardi[-1])):
+      garakie_vardi.insert(2, vards)
+      garakie_vardi.pop()
+
+    # 4. ja vārds ir īsāks par esošo garāko, bet garāks par otro
+    elif (len(vards) < len(garakie_vardi[0])) and (len(vards) >= len(garakie_vardi[1])):
+      garakie_vardi.insert(1, vards)
+      garakie_vardi.pop()
+
+  return garakie_vardi
+
+
+string = input()
+print(atrast_vardus(string))
