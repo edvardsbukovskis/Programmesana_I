@@ -1,0 +1,6 @@
+1. Uzrakstīt programmu, kurai tiek padota string vērtība. Programmai jaatgriež cik daudz patskaņu ir šajā string vērtībā.
+
+2. Uzrakstīt programmu, kas pārbauda vai padotajā string vērtībā ir korekti sarakstītas iekavas ( un ). Lai iekavas būtu korekti uzrakstītām, katrai atverošai iekavai ( ir jābūt aizveošai iekavai ).
+Piemēram: "()()()" => True; "(()"=> False;
+"((()))" => True.
+Hint: Jāizmanto stack datu struktūra.
