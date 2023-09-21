@@ -1,0 +1,61 @@
+Piggy Bank
+You just returned from a trip to South America. The countries you visited were Colombia, Brazil, and Peru. You arrived back in your country with some foreign currencies from these three countries.
+
+Piggy Bank
+Write a C++ program called currency.cpp that prompts the user for the amount of each foreign currency. Your prompts should look like:
+
+Enter number of Colombian Pesos:
+Enter number of Brazilian Reais:
+Enter number of Peruvian Soles:
+
+Your program should then convert the amount entered by the user and display the total amount of USD. Your final output should look like:
+
+US Dollars = $______
+
+1.
+First things first, let’s declare three variables:
+
+pesos for Pesos
+reais for Reais
+soles for Soles
+
+2.
+You’ll need another variable to store the amount you have in dollars.
+
+Let’s declare a variable called dollars.
+
+3.
+Compile and execute the code to make sure it’s bug-free before moving on!
+
+4.
+You’ll want to ask the user the first question:
+
+Enter number of Colombian Pesos:
+
+5.
+You then want the user to type in how much they have and store it in pesos.
+
+6.
+Do this for the other two currencies.
+
+Coverting to USD:
+7.
+Google the conversion rates:
+
+from Pesos to USD
+from Reais to USD
+from Soles to USD
+And write them down in your code using a comment.
+
+8.
+Write an equation that solves for the total USD.
+
+This will look something like:
+
+dollars = (conversion_rate1 * currency1) + (conversion_rate2 * currency2) + (conversion_rate3 * currency3)
+
+
+9.
+Display the total amount of USD. Your final output should look like:
+
+US Dollars = $______
