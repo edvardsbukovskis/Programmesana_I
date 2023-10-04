@@ -1,0 +1,69 @@
+Write a rock_paper_scissors program that:
+
+Prompts the user to select either Rock, Paper, Scissors.
+Instructs the computer to randomly select either Rock, Paper, Scissors.
+Compares the user’s choice and the computer’s choice and determine the winner.
+Informs the user who the winner is.
+Note: This project will be particularly challenging due to its complex logic. Beware! Only the brave should venture forth.
+
+
+1.
+Setting up:
+2.
+Begin by writing a multi-line comment that describes what this program will do.
+
+3.
+Let’s create a skeleton for the program. Add:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  
+  // Live long and prosper
+  
+}
+
+4.
+In this program, we need a random number for the computer’s choice and we also need to declare an int variable called user for the user’s choice.
+
+So add this line of code at the top:
+
+#include <stdlib.h>
+
+And the code below in main():
+
+srand (time(NULL));
+  
+int computer = rand() % 3 + 1;
+
+int user = 0;
+
+Now we have a random number that could be 1, 2, or 3 for the computer. And we also have a variable for user’s input.
+
+5.
+Before moving on, let’s compile and execute using the terminal to make sure there are no bugs.
+
+Prompt the user to select either Rock, Paper, or Scissors:
+6.
+We can do something like:
+
+cout << "====================\n";
+cout << "rock paper scissors!\n";
+cout << "====================\n";
+
+cout << "1) ✊\n";
+cout << "2) ✋\n";
+cout << "3) ✌️\n";
+
+cout << "shoot! ";
+
+7.
+Grab user’s input using std::cin and store it into user.
+
+8.
+Now we have both the user’s choice and the computer’s randomized choice, let’s use conditionals & logic to determine the winner.
+
+Make sure to jot down the logic of Rock Paper Scissors on a piece of paper before you start coding.
+
+Take your time!
