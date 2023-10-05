@@ -19,7 +19,7 @@ int main() {
   
   if (guess == 8) {
     
-    std::cout << "You got it!\n";
+    cout << "You got it!\n";
   
   }  
   
