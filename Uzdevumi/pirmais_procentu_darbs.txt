@@ -1,0 +1,18 @@
+Atbildes uz teorētiskajiem jautājumiem ir veicamas, izmantojot koda komentārus.
+Lai iekomentētu rindiņu tiek izmantoti simboli "//".
+Lai iekomentētu vairākas rindiņas var izmantot "/*" un "*/".
+Darbs ir nododams vienā failā.
+
+Teorētiskie jautājumi:
+
+1. Kas ir datu tips? Nosauciet vismaz 3 dažādus datu tipus C++ un dodiet piemērus, kā tos var izmantot.
+2. Paskaidrojiet, kā strādā if-else nosacījums. Kādas ir vel citas nosacījumu konstrukcijas?
+
+
+Praktiskais uzdevums:
+1. Nosacījumu pārbaude (if-else):
+Uzdevums: Uzrakstīt programmu, kurā lietotājs ievada veselu skaitli. Programma pārbauda, vai skaitlis ir pozitīvs, negatīvs vai vienāds ar nulli, un izvada attiecīgu ziņu. Piemēram:
+
+"Skaitlis ir pozitivs."
+"Skaitlis ir negativs."
+"Skaitlis ir nulle."
