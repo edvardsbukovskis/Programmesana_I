@@ -1,0 +1,12 @@
+1. Preču Katalogs:
+Uzdevums:
+Izveidojiet klasi Katalogs, kas pārvalda preču katalogu, kur katra prece ir objekts ar īpašībām: nosaukums, kategorija, cena.
+Izveidojiet metodes, lai pievienotu, dzēstu un atjauninātu preces.
+Papildus izveidojiet metodi, lai atrastu preces, kas atbilst noteiktai kategorijai.
+
+
+2. Transportlīdzekļu Sistēma:
+Uzdevums:
+Izveidojiet abstraktu klasi Transportlidzeklis ar metodi aprekina_nobraukumu().
+Izveidojiet apakšklases Automašīna un Velosipēds, kas implementē aprekina_nobraukumu() dažādos veidos.
+Demonstrējiet, kā izmantot polimorfismu, izveidojot transportlīdzekļu sarakstu un aprēķinot nobraukumus katram.
