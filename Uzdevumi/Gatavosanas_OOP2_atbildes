@@ -1,0 +1,116 @@
+3.uzdevums
+class Rezervacija:
+    def __init__(self, klienta_vards, galamerkis, datums, rezervacijas_numurs):
+        self.klienta_vards = klienta_vards
+        self.galamerkis = galamerkis
+        self.datums = datums
+        self.rezervacijas_numurs = rezervacijas_numurs
+        self.statuss = "rezervēts"
+
+    def atcelt_rezervaciju(self):
+        self.statuss = "atcelts"
+
+class Agentura:
+    def __init__(self):
+        self.rezervacijas = []
+
+    def pievienot_rezervaciju(self, rezervacija):
+        self.rezervacijas.append(rezervacija)
+
+    def paradit_visas_rezervacijas(self):
+        return [r.__dict__ for r in self.rezervacijas]
+
+    def meklet_pec_klienta(self, klienta_vards):
+        return [r for r in self.rezervacijas if r.klienta_vards == klienta_vards]
+
+# Testēšana
+agentura = Agentura()
+rez1 = Rezervacija("Ilze", "Parīze", "2024-12-25", "001")
+rez2 = Rezervacija("Andris", "Londona", "2024-12-30", "002")
+
+agentura.pievienot_rezervaciju(rez1)
+agentura.pievienot_rezervaciju(rez2)
+
+rez1.atcelt_rezervaciju()
+print(agentura.paradit_visas_rezervacijas())
+print(agentura.meklet_pec_klienta("Ilze"))
+
+
+
+
+4. uzdevums
+from datetime import datetime, timedelta
+
+class Gramata:
+    def __init__(self, nosaukums, autors):
+        self.nosaukums = nosaukums
+        self.autors = autors
+        self.irIzsniegta = False
+        self.izsniegsanas_datums = None
+        self.nodosanas_datums = None
+
+class IzsniegsanasSaraksts:
+    def __init__(self):
+        self.gramatas = []
+
+    def pievienot_gramatu(self, gramata):
+        self.gramatas.append(gramata)
+
+    def izsniegt_gramatu(self, nosaukums):
+        for gramata in self.gramatas:
+            if gramata.nosaukums == nosaukums and not gramata.irIzsniegta:
+                gramata.irIzsniegta = True
+                gramata.izsniegsanas_datums = datetime.now()
+                gramata.nodosanas_datums = datetime.now() + timedelta(days=14)
+                return f"Grāmata '{nosaukums}' izsniegta."
+        return "Grāmata nav pieejama vai jau ir izsniegta."
+
+    def atgriezt_gramatu(self, nosaukums):
+        for gramata in self.gramatas:
+            if gramata.nosaukums == nosaukums and gramata.irIzsniegta:
+                gramata.irIzsniegta = False
+                gramata.izsniegsanas_datums = None
+                gramata.nodosanas_datums = None
+                return f"Grāmata '{nosaukums}' atgriezta."
+        return "Grāmata netika atrasta."
+
+    def meklet_izsniegtas_gramatas(self):
+        return [g.nosaukums for g in self.gramatas if g.irIzsniegta]
+
+# Testēšana
+biblioteka = IzsniegsanasSaraksts()
+gramata1 = Gramata("Dzintara ceļš", "Mārtiņš Ziedonis")
+gramata2 = Gramata("Zem ūdens", "Anna Lāce")
+
+biblioteka.pievienot_gramatu(gramata1)
+biblioteka.pievienot_gramatu(gramata2)
+
+print(biblioteka.izsniegt_gramatu("Dzintara ceļš"))
+print(biblioteka.meklet_izsniegtas_gramatas())
+print(biblioteka.atgriezt_gramatu("Dzintara ceļš"))
+
+
+Teorijas uzdevumi:
+1. Klase un Objekts (Class and Object)
+Kas ir klase un objekts?
+Klase ir definīcija vai veidne, kas nosaka objekta īpašības (atribūtus) un darbības (metodes).
+Objekts ir konkrēta klases instance, kas satur īpašas vērtības katram klases atribūtam.
+Piemērs: Mašīna kā klase var saturēt īpašības marka, modelis, un gads, bet konkrēts objekts var būt marka="Toyota", modelis="Corolla", gads=2015.
+
+2. Polimorfisms (Polymorphism)
+Kas ir polimorfisms un kā tas tiek izmantots OOP?
+Polimorfisms ir spēja dažādām klasēm realizēt vienu un to pašu metodi dažādos veidos. Piemērs: gan klase Kaķis, gan Suns var izmantot metodi run(), taču katra no tām var to realizēt citādi.
+
+Izskaidrojiet, kā polimorfisms palīdz padarīt kodu elastīgāku.
+Polimorfisms ļauj izsaukt metodes dažādās klasēs, nezinot konkrētā objekta tipu. Tas samazina koda duplikāciju, jo var rakstīt kodu, kas darbojas ar visām klasēm, kas manto bāzes klasi.
+
+3. Mantošana (Inheritance)
+Kas ir mantošana un kā to izmanto OOP?
+Mantošana ļauj izveidot jaunu klasi, kas manto īpašības un metodes no citas (bāzes) klases.
+Piemēram, Kaķis un Suns var mantojot Dzīvnieks klases īpašības kā svars un metodes kā elpot().
+
+Izskaidrojiet, kas ir vairākkārtēja mantošana.
+Vairākkārtēja mantošana nozīmē, ka klase manto no vairākām bāzes klasēm.
+
+Kādā gadījumā mantošana nebūtu piemērota?
+Mantošana nebūtu piemērota, ja klasēm nav loģiskas attiecības "ir-daļa-no" un labāk būtu izmantot kompozīciju, kur viena klase ietver citu klasi kā atribūtu.
