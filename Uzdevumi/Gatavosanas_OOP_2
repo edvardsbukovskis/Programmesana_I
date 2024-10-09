@@ -1,0 +1,34 @@
+3. Ceļojumu aģentūras rezervācijas sistēma
+Uzdevums:
+Izveidojiet ceļojumu rezervācijas sistēmu, kas apstrādā klientu rezervācijas dažādiem galamērķiem.
+Izveidojiet klasi Rezervacija, ar īpašībām: klienta_vards, galamerkis, datums, rezervacijas_numurs, statuss (rezervēts, apmaksāts, atcelts).
+Izveidojiet metodi atcelt_rezervaciju(), lai atceltu rezervāciju un mainītu statusu uz "atcelts".
+Izveidojiet klasi Agentura, kas uztur sarakstu ar rezervācijām un pārvalda tās.
+Izveidojiet metodes pievienot_rezervaciju() un paradit_visas_rezervacijas(), lai pievienotu jaunas rezervācijas un parādītu visas esošās rezervācijas.
+Izveidojiet metodi meklet_pec_klienta(), lai meklētu rezervācijas pēc klienta vārda.
+Testējiet sistēmu, izveidojot vairākas rezervācijas, tās atceļot un meklējot konkrētus datus.
+
+
+4. Bibliotēkas izsniegšanas sistēma ar nodošanas datumu (Library Checkout System with Return Date)
+Uzdevums:
+Izveidojiet bibliotēkas izsniegšanas sistēmu, kas pievieno nodošanas datumu katrai grāmatai un pārvalda izsniegšanas informāciju.
+Izveidojiet klasi Gramata, ar īpašībām: nosaukums, autors, irIzsniegta, izsniegšanas_datums, nodošanas_datums.
+Izveidojiet klasi IzsniegšanasSaraksts, kas pārvalda izsniegto grāmatu sarakstu.
+Izveidojiet metodi izsniegt_gramatu(), kas pievieno grāmatai izsniegšanas datumu un aprēķina nodošanas datumu (piemēram, pēc 14 dienām).
+Izveidojiet metodi atgriezt_gramatu(), lai mainītu statusu uz "nav izsniegta".
+Izveidojiet metodi meklet_izsniegtas_gramatas(), kas atgriež visas pašreiz izsniegtās grāmatas.
+
+
+Teorijas jautājumi:
+
+1. Klase un Objekts 
+Kas ir klase un objekts? Sniedziet precīzu definīciju un piemēru, kur aprakstīts, kā klases un objekti tiek izmantoti programmēšanā.
+
+2. Polimorfisms (Polymorphism)
+Kas ir polimorfisms un kā tas tiek izmantots OOP?
+Izskaidrojiet, kā polimorfisms palīdz padarīt kodu elastīgāku.
+
+3. Mantošana (Inheritance)
+Kas ir mantošana un kā to izmanto OOP?
+Izskaidrojiet, kas ir vairākkārtēja mantošana
+Kādā gadījumā mantošana nebūtu piemērota?
