@@ -1,0 +1,44 @@
+Teorijas jautājumi: 
+
+Kas ir mainīgais? Aprakstiet, kā deklarēt un izmantot mainīgo programmā, kā arī kāda ir mainīgo loma programmēšanā. 
+
+Kas ir nosacījuma operators? Aprakstiet, kā darbojas if-else nosacījums, un sniedziet piemēru. 
+
+Kas ir cikls un kādas ir tā galvenās īpašības? Paskaidrojiet atšķirības starp while un for cikliem. 
+
+Kas ir loģiskais operators? Paskaidrojiet AND, OR, un NOT operatorus un sniedziet piemēru, kā tos izmantot nosacījumos.
+
+ 
+ 
+
+1. Uzdevums: Temperatūras klasifikācija (vidējs līmenis)
+Uzdevums: Uzrakstiet programmu, kas analizē virkni lietotāja ievadīto temperatūras mērījumu (grādos pēc Celsija) un nosaka, vai katrs no tiem ir auksts (zem 0°C), silts (0-20°C), vai karsts (virs 20°C). Programma izvada statistiku par katru temperatūras kategoriju.
+
+Detalizēti norādījumi:
+
+Lietotājam jāievada 10 temperatūras vērtības.
+Programma pārbauda katru vērtību un klasificē to:
+Auksts, silts vai karsts.
+Pēc ievades beigām programma izvada:
+Cik mērījumu bija auksti,
+Cik mērījumu bija silti,
+Cik mērījumu bija karsti.
+2. Uzdevums: Skaitļu spēle  
+
+Uzdevums: Izveidojiet programmu, kas spēlē ar lietotāju "Uzminēt skaitli". Programma ģenerē nejaušu skaitli diapazonā no 1 līdz 100, un lietotājam ir jāuzmin šis skaitlis ar maksimāli 10 mēģinājumiem. 
+
+Detalizēti norādījumi: 
+
+Programma ģenerē nejaušu skaitli diapazonā no 1 līdz 100. 
+
+Lietotājam ir jāmin, kāds ir šis skaitlis. 
+
+Pēc katra mēģinājuma programma izvada, vai minētais skaitlis ir pārāk liels, pārāk mazs vai precīzs. 
+
+Lietotājam ir 10 mēģinājumi, lai uzminētu skaitli. 
+
+Ja lietotājs uzmin skaitli pareizi, programma izvada uzvaras ziņu un mēģinājumu skaitu. Ja pēc 10 mēģinājumiem skaitlis netiek uzminēts, programma izvada zaudējuma ziņu un pareizo skaitli. 
+
+ 
+
+ 
