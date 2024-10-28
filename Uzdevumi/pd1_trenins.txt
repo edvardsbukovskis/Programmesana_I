@@ -12,7 +12,7 @@ Kas ir loģiskais operators? Paskaidrojiet AND, OR, un NOT operatorus un sniedzi
  
 
 1. Uzdevums: Temperatūras klasifikācija (vidējs līmenis)
-Uzdevums: Uzrakstiet programmu, kas analizē virkni lietotāja ievadīto temperatūras mērījumu (grādos pēc Celsija) un nosaka, vai katrs no tiem ir auksts (zem 0°C), silts (0-20°C), vai karsts (virs 20°C). Programma izvada statistiku par katru temperatūras kategoriju.
+Uzdevums: Uzrakstiet programmu, kas analizē ievadīto temperatūras mērījumu (grādos pēc Celsija) un nosaka, vai tas ir auksts (zem 0°C), silts (0-20°C), vai karsts (virs 20°C). Programma izvada statistiku par temperatūras kategoriju.
 
 Detalizēti norādījumi:
 
