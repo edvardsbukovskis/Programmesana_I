@@ -25,7 +25,7 @@ o	Vārds: "Mārtiņš"
 o	Vecums: 17
     
 8.	Nomainiet Lauras vecumu uz 16.
-9.	
+
 10.	Vēlreiz izdrukājiet visu vārdnīcu studenti, lai redzētu izmaiņas.
 
 Paredzamais rezultāts:
