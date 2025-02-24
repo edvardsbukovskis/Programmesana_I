@@ -1,0 +1,219 @@
+1. Līmenis - Viegli
+1. uzdevums: Studentu vārdnīca (Soli pa solim)
+Uzdevuma mērķis: Izveidot vārdnīcu ar informāciju par studentiem un veikt pamata darbības ar to.
+Soļi:
+1.	Izveidojiet tukšu vārdnīcu ar nosaukumu studenti.
+
+2.	Pievienojiet vārdnīcai pirmo studentu:
+o	Kā atslēgu izmantojiet studenta vārdu "Anna".
+o	Kā vērtību izmantojiet viņas vecumu, kas ir 15.
+3.	Pievienojiet vārdnīcai otro studentu:
+o	Kā atslēgu izmantojiet studenta vārdu "Pēteris".
+o	Kā vērtību izmantojiet viņa vecumu, kas ir 16. 
+4.	Pievienojiet vārdnīcai trešo studentu:
+o	Kā atslēgu izmantojiet studenta vārdu "Laura".
+o	Kā vērtību izmantojiet viņas vecumu, kas ir 15.
+5.	Izdrukājiet visu vārdnīcu studenti, lai pārliecinātos, ka tā ir izveidota pareizi.
+Paredzamais rezultāts:
+      {'Anna': 15, 'Pēteris': 16, 'Laura': 15}
+    
+6.	Piekļūstiet un izdrukājiet Pētera vecumu no vārdnīcas, izmantojot viņa vārdu kā atslēgu.
+Paredzamais rezultāts:
+      16  
+7.	Pievienojiet vārdnīcai vēl vienu studentu:
+o	Vārds: "Mārtiņš"
+o	Vecums: 17
+    
+8.	Nomainiet Lauras vecumu uz 16.
+9.	
+10.	Vēlreiz izdrukājiet visu vārdnīcu studenti, lai redzētu izmaiņas.
+
+Paredzamais rezultāts:
+      {'Anna': 15, 'Pēteris': 16, 'Laura': 16, 'Mārtiņš': 17}
+    
+2. uzdevums: Preču vārdnīca (Soli pa solim)
+Uzdevuma mērķis: Izveidot vārdnīcu ar preču cenām un izmantot ciklus, lai piekļūtu datiem.
+Soļi:
+1.	Izveidojiet vārdnīcu preces ar šādām precēm un cenām:
+o	"Ābols": 0.50
+o	"Bumbieris": 0.75
+o	"Banāns": 0.40
+    
+2.	Izmantojiet for ciklu un .keys() metodi, lai izdrukātu katras preces nosaukumu atsevišķā rindā.
+
+Paredzamais rezultāts:
+Ābols
+Bumbieris
+Banāns
+    
+3.	Izmantojiet for ciklu un .values() metodi, lai izdrukātu katras preces cenu atsevišķā rindā.
+    
+Paredzamais rezultāts:
+0.5
+0.75
+0.4
+    
+4.	Izmantojiet for ciklu un .items() metodi, lai izdrukātu katras preces nosaukumu un cenu vienā rindā formātā "Prece: [nosaukums], Cena: [cena]".    
+Paredzamais rezultāts:
+Prece: Ābols, Cena: 0.5
+Prece: Bumbieris, Cena: 0.75
+Prece: Banāns, Cena: 0.4
+    
+2. Līmenis - Vidēji grūti
+1. uzdevums: Vārdu biežuma skaitītājs (Soli pa solim)
+Uzdevuma mērķis: Izveidot vārdnīcu, kas skaita vārdu parādīšanās reizes dotā teikumā.
+Soļi:
+1.	Izveidojiet mainīgo teikums un piešķiriet tam šādu tekstu: "ābols bumbieris ābols apelsīns bumbieris".    
+2.	Sadaliet teikumu vārdos, izmantojot metodi .split(), un saglabājiet rezultātu sarakstā vārdi.
+    
+Paredzamais rezultāts (saraksts vārdi):
+['ābols', 'bumbieris', 'ābols', 'apelsīns', 'bumbieris']
+
+    
+3.	Izveidojiet tukšu vārdnīcu ar nosaukumu vārdu_biežums.
+    
+4.	Izmantojiet for ciklu, lai iterētu cauri sarakstam vārdi. Katram vārdam:
+o	Pārbaudiet, vai vārds jau ir atslēga vārdnīcā vārdu_biežums.
+o	Ja vārds ir atslēga: Palieliniet vārdam atbilstošo vērtību (skaitītāju) par 1.
+o	Ja vārds nav atslēga: Pievienojiet vārdu kā atslēgu vārdnīcai un iestatiet vērtību uz 1 (jo šī ir pirmā reize, kad vārds parādās).
+
+5.	Izdrukājiet vārdnīcu vārdu_biežums, lai redzētu vārdu biežumu.
+    
+Paredzamais rezultāts:
+      {'ābols': 2, 'bumbieris': 2, 'apelsīns': 1}
+    
+2. uzdevums: Divu veikalu preču apvienošana (Soli pa solim)
+Uzdevuma mērķis: Apvienot preču sarakstus no diviem veikaliem vienā vārdnīcā, dodot priekšroku otrā veikala cenām, ja preces ir abos veikalos.
+Soļi:
+1.	Izveidojiet vārdnīcu veikals1 ar šādām precēm un cenām:
+o	"ābols": 0.50
+o	"bumbieris": 0.75
+o	"banāns": 0.40
+    
+2.	Izveidojiet vārdnīcu veikals2 ar šādām precēm un cenām:
+o	"bumbieris": 0.80
+o	"apelsīns": 0.60
+o	"ābols": 0.55
+    
+3.	Izveidojiet tukšu vārdnīcu ar nosaukumu apvienots_veikals.   
+ 
+4.	Pievienojiet visas preces un cenas no veikals1 vārdnīcai apvienots_veikals.
+
+5.	Izmantojiet .update() metodi, lai atjauninātu apvienots_veikals ar precēm no veikals2. Tas automātiski pārrakstīs cenas, ja preces ir abos veikalos.
+
+
+
+
+6.	Izdrukājiet vārdnīcu apvienots_veikals, lai redzētu apvienoto preču sarakstu.
+    
+Paredzamais rezultāts:
+      {'ābols': 0.55, 'bumbieris': 0.80, 'banāns': 0.4, 'apelsīns': 0.6}
+    
+3. Līmenis - Grūti
+1. uzdevums: Studentu atzīmju vārdnīca ar priekšmetiem (Soli pa solim)
+Uzdevuma mērķis: Izveidot sarežģītāku vārdnīcu struktūru, lai glabātu studentu atzīmes pa priekšmetiem, un veikt aprēķinus ar šiem datiem.
+Soļi:
+1.	Izveidojiet tukšu vārdnīcu ar nosaukumu atzīmes.
+    
+2.	Pievienojiet pirmo studentu "Eva" vārdnīcai atzīmes. Kā vērtību pievienojiet citu vārdnīcu, kurā glabājas priekšmetu nosaukumi (atslēgas) un Evas atzīmes (vērtības):
+o	"Matemātika": 8
+o	"Latviešu valoda": 9
+o	"Angļu valoda": 7
+    
+3.	Pievienojiet otro studentu "Artūrs" ar šādām atzīmēm:
+o	"Matemātika": 6
+o	"Latviešu valoda": 7
+o	"Fizika": 8
+    
+4.	Pievienojiet trešo studentu "Sanita" ar šādām atzīmēm:
+o	"Ķīmija": 9
+o	"Bioloģija": 10
+o	"Angļu valoda": 8
+
+    
+5.	Izdrukājiet visu studentu vārdus, izmantojot ciklu un .keys() metodi no vārdnīcas atzīmes.
+    
+Paredzamais rezultāts:
+Eva
+Artūrs
+Sanita
+     
+6.	Katram studentam izdrukājiet priekšmetus un atzīmes. Izmantojiet ligzdoto for ciklu. Ārējais cikls iterē cauri studentiem (vārdnīcas atzīmes atslēgām), iekšējais cikls iterē cauri katra studenta priekšmetiem un atzīmēm (iekšējās vārdnīcas .items() metodi).
+    
+Paredzamais rezultāts (apmēram):
+Eva:
+  Matemātika - 8
+  Latviešu valoda - 9
+  Angļu valoda - 7
+Artūrs:
+  Matemātika - 6
+  Latviešu valoda - 7
+  Fizika - 8
+Sanita:
+  Ķīmija - 9
+  Bioloģija - 10
+  Angļu valoda - 8
+    
+7.	Aprēķiniet un izdrukājiet katra studenta vidējo atzīmi. Katram studentam:
+o	Iegūstiet atzīmju sarakstu (iekšējās vārdnīcas vērtības).
+o	Aprēķiniet atzīmju summu.
+o	Aprēķiniet atzīmju skaitu.
+o	Aprēķiniet vidējo atzīmi (summa / skaits).
+o	Izdrukājiet studenta vārdu un vidējo atzīmi.
+    
+Paredzamais rezultāts (apmēram):
+Eva vidējā atzīme: 8.0
+Artūrs vidējā atzīme: 7.0
+Sanita vidējā atzīme: 9.0
+    
+8.	Atrodiet un izdrukājiet studentu ar visaugstāko vidējo atzīmi.
+o	Izveidojiet mainīgos, lai glabātu visaugstāko vidējo atzīmi un studenta vārdu, kuram tā pieder.
+o	Iterējiet cauri studentiem un viņu vidējām atzīmēm (var izmantot iepriekšējā solī aprēķinātās vidējās atzīmes vai aprēķināt tās vēlreiz).
+o	Salīdziniet katra studenta vidējo atzīmi ar pašreizējo visaugstāko vidējo atzīmi un atjauniniet, ja nepieciešams.
+o	Izdrukājiet studenta vārdu, kuram ir visaugstākā vidējā atzīme.
+    
+Paredzamais rezultāts:
+      Students ar visaugstāko vidējo atzīmi: Sanita
+
+
+
+
+
+
+
+    
+2. uzdevums: Produktu grupēšana pēc kategorijām un vidējās cenas aprēķināšana (Soli pa solim)
+Uzdevuma mērķis: Grupēt produktus pēc kategorijām un aprēķināt vidējo cenu katrai kategorijai.
+Soļi:
+1.	Izveidojiet sarakstu produkti ar vārdnīcām, kas apraksta produktus:
+2.	produkti = [
+3.	    {"nosaukums": "Ābols", "cena": 0.50, "kategorija": "Augļi"},
+4.	    {"nosaukums": "Bumbieris", "cena": 0.75, "kategorija": "Augļi"},
+5.	    {"nosaukums": "Burkāns", "cena": 0.30, "kategorija": "Dārzeņi"},
+6.	    {"nosaukums": "Banāns", "cena": 0.40, "kategorija": "Augļi"},
+7.	    {"nosaukums": "Tomāts", "cena": 0.60, "kategorija": "Dārzeņi"}
+8.	]
+    
+9.	Izveidojiet tukšu vārdnīcu ar nosaukumu kategoriju_cenas, kur glabāsies kategoriju vidējās cenas.
+    
+10.	Izveidojiet vārdnīcu kategoriju_summas un vārdnīcu kategoriju_skaits. Šīs vārdnīcas palīdzēs aprēķināt vidējās cenas. Tās arī sākotnēji ir tukšas.
+
+
+11.	Izmantojiet for ciklu, lai iterētu cauri sarakstam produkti. Katram produktam:
+o	Iegūstiet produkta kategoriju.
+o	Iegūstiet produkta cenu.
+o	Pārbaudiet, vai kategorija jau ir atslēga vārdnīcā kategoriju_summas.
+	Ja kategorija ir atslēga: Pievienojiet produkta cenu esošajai summai kategoriju_summas un palieliniet skaitītāju kategoriju_skaits par 1.
+	Ja kategorija nav atslēga: Pievienojiet kategoriju kā atslēgu vārdnīcām kategoriju_summas un kategoriju_skaits. Iestatiet summu uz produkta cenu un skaitītāju uz 1.
+    
+12.	Izmantojiet for ciklu, lai iterētu cauri kategorijām vārdnīcā kategoriju_summas. Katrai kategorijai:
+o	Aprēķiniet vidējo cenu: vidējā_cena = kategoriju_summas[kategorija] / kategoriju_skaits[kategorija].
+o	Pievienojiet kategoriju un vidējo cenu vārdnīcai kategoriju_cenas.
+    
+13.	Izdrukājiet vārdnīcu kategoriju_cenas, lai redzētu kategoriju vidējās cenas.
+
+    
+Paredzamais rezultāts:
+      {'Augļi': 0.55, 'Dārzeņi': 0.45}
+    
+
