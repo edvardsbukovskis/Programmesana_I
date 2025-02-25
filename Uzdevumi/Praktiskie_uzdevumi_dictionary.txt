@@ -215,5 +215,74 @@ o	Pievienojiet kategoriju un vidējo cenu vārdnīcai kategoriju_cenas.
     
 Paredzamais rezultāts:
       {'Augļi': 0.55, 'Dārzeņi': 0.45}
+
+___________________________________________________________________________________________________________________________________________________________________________________
+Papildus uzdevumi:
+
+Noliktavas inventarizācija
+
+Uzdevuma mērķis: Izveidot vārdnīcu, kas attēlo noliktavas inventarizāciju, un veikt dažādas operācijas ar to, piemēram, pievienot/noņemt preces, pārbaudīt krājumus un aprēķināt kopējo vērtību.
+
+Soļi:
+
+Izveidojiet vārdnīcu noliktava ar šādām precēm un to daudzumiem:
+
+"Ābols": 50
+
+"Bumbieris": 30
+
+"Apelsīns": 70
+
+"Banāns": 100
+
+noliktava = {"Ābols": 50, "Bumbieris": 30, "Apelsīns": 70, "Banāns": 100}
+
+Izveidojiet funkciju pievienot_preci(noliktava, preces_nosaukums, daudzums), kas pieņem vārdnīcu noliktava, preces nosaukumu un daudzumu kā argumentus. Funkcijai jāvar:
+
+Pārbaudīt, vai prece ar norādīto nosaukumu jau eksistē vārdnīcā noliktava.
+Ja prece eksistē, palielināt tās daudzumu par norādīto daudzums.
+Ja prece neeksistē, pievienot jaunu preci ar norādīto nosaukumu un daudzumu vārdnīcai noliktava.
+Atgriezt atjaunināto vārdnīcu noliktava.
+
+
+Izmantojiet funkciju pievienot_preci(), lai noliktavai pievienotu 20 "Ābolus" un 40 "Ķiršus" (kas sākotnēji nav noliktavā).
+
+Izveidojiet funkciju noņemt_preci(noliktava, preces_nosaukums, daudzums), kas pieņem vārdnīcu noliktava, preces nosaukumu un daudzumu kā argumentus. Funkcijai jāvar:
+
+Pārbaudīt, vai prece ar norādīto nosaukumu eksistē vārdnīcā noliktava.
+Ja prece eksistē, pārbaudīt, vai noliktavā ir pietiekams daudzums preces (t.i., vai daudzums noliktavā ir lielāks vai vienāds ar daudzums, ko vēlas noņemt).
+Ja daudzums ir pietiekams, samazināt preces daudzumu noliktavā par norādīto daudzums.
+Ja daudzums nav pietiekams, izdrukāt paziņojumu, ka noliktavā nav pietiekami daudz preces.
+Ja prece neeksistē, izdrukāt paziņojumu, ka prece nav atrasta noliktavā.
+Atgriezt atjaunināto vārdnīcu noliktava.
+
+Izmantojiet funkciju noņemt_preci(), lai no noliktavas noņemtu 15 "Bumbierus" un 80 "Banānus" (mēģiniet noņemt vairāk banānu nekā ir noliktavā, lai pārbaudītu kļūdas paziņojumu).
+
+Izveidojiet funkciju pārbaudīt_krājumus(noliktava, preces_nosaukums), kas pieņem vārdnīcu noliktava un preces nosaukumu kā argumentus. Funkcijai jāvar:
+
+Pārbaudīt, vai prece ar norādīto nosaukumu eksistē vārdnīcā noliktava.
+Ja prece eksistē, atgriezt preces daudzumu.
+Ja prece neeksistē, atgriezt 0.
+
+Izmantojiet funkciju pārbaudīt_krājumus(), lai pārbaudītu "Ābolu", "Bumbieru" un "Apelsīnu" krājumus un izdrukātu katras preces nosaukumu un daudzumu.
+
+Paredzamais rezultāts (apmēram):
+
+Ābolu krājumi: 70
+Bumbieru krājumi: 15
+Apelsīnu krājumi: 70
+Use code with caution.
+Izveidojiet vārdnīcu preču_cenas ar preču nosaukumiem (kā atslēgas) un to cenām (kā vērtības):
+
+preču_cenas = {"Ābols": 0.60, "Bumbieris": 0.85, "Apelsīns": 0.70, "Banāns": 0.45, "Ķirsis": 1.20}
+
+Aprēķiniet un izdrukājiet kopējo noliktavas vērtību. Iterējiet cauri vārdnīcai noliktava. Katrai precei:
+
+Iegūstiet preces daudzumu no noliktava.
+Iegūstiet preces cenu no preču_cenas.
+Aprēķiniet preces vērtību (daudzums * cena).
+Summējiet visu preču vērtības, lai iegūtu kopējo noliktavas vērtību.
+Izdrukājiet kopējo noliktavas vērtību.
+
     
 
