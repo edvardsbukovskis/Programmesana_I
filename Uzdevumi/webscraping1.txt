@@ -1,0 +1,100 @@
+html_uzdevumiem = """
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>E-veikals "Dabīgi produkti"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="galvene">
+        <nav>
+            <ul>
+                <li><a href="/">Sākums</a></li>
+                <li><a href="/produkti">Produkti</a></li>
+                <li><a href="/par-mums">Par mums</a></li>
+                <li><a href="/kontakti">Kontakti</a></li>
+            </ul>
+        </nav>
+        <h1>Laipni lūdzam E-veikalā "Dabīgi produkti"</h1>
+        <p class="apraksts">Mēs piedāvājam plašu dabīgu un ekoloģisku produktu klāstu jūsu veselībai un labsajūtai.</p>
+    </header>
+
+    <main id="saturs">
+        <section class="produktu-kategorija">
+            <h2>Augļi un dārzeņi</h2>
+            <div class="produktu-saraksts">
+                <div class="produkts kartupelis">
+                    <img src="images/kartupelis.jpg" alt="Kartupelis" class="produkts-attels">
+                    <h3 class="produkts-nosaukums">Kartupelis</h3>
+                    <p class="produkts-cena">Cena: 0.80 EUR/kg</p>
+                    <button class="pirkt-poga">Pievienot grozam</button>
+                </div>
+                <div class="produkts burkāns">
+                    <img src="images/burkans.jpg" alt="Burkāns" class="produkts-attels">
+                    <h3 class="produkts-nosaukums">Burkāns</h3>
+                    <p class="produkts-cena">Cena: 1.20 EUR/kg</p>
+                    <button class="pirkt-poga">Pievienot grozam</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="produktu-kategorija">
+            <h2>Piena produkti</h2>
+            <div class="produktu-saraksts">
+                <div class="produkts piens">
+                    <img src="images/piens.jpg" alt="Piens" class="produkts-attels">
+                    <h3 class="produkts-nosaukums">Piens</h3>
+                    <p class="produkts-cena">Cena: 1.50 EUR/l</p>
+                    <button class="pirkt-poga">Pievienot grozam</button>
+                </div>
+                <div class="produkts siers">
+                    <img src="images/siers.jpg" alt="Siers" class="produkts-attels">
+                    <h3 class="produkts-nosaukums">Siers</h3>
+                    <p class="produkts-cena">Cena: 8.00 EUR/kg</p>
+                    <button class="pirkt-poga">Pievienot grozam</button>
+                </div>
+                <div class="produkts jogurts">
+                    <img src="images/jogurts.jpg" alt="Jogurts" class="produkts-attels">
+                    <h3 class="produkts-nosaukums">Jogurts</h3>
+                    <p class="produkts-cena">Cena: 2.50 EUR/iepakojumā</p>
+                    <button class="pirkt-poga">Pievienot grozam</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="reklama">
+            <h3>Īpašais piedāvājums šonedēļ!</h3>
+            <p>Visām ogām -20% atlaide!</p>
+            <a href="/ogas" class="reklamas-saite">Skatīt piedāvājumu</a>
+        </div>
+    </main>
+
+    <footer id="kājene">
+        <p>© 2023 E-veikals "Dabīgi produkti". Visas tiesības aizsargātas.</p>
+        <p>Seko mums sociālajos tīklos: <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+    </footer>
+</body>
+</html>
+"""
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UZDEVUMI:
+
+Viegls Līmenis
+
+  Uzdevums: Iegūstiet e-veikala nosaukumu no <title> taga.
+  
+  Uzdevums: Iegūstiet galvenes virsrakstu <h1>.
+
+Vidējs Līmenis
+
+  Uzdevums: Iegūstiet visu navigācijas saišu tekstu (Sākums, Produkti, Par mums, Kontakti).
+  
+  Uzdevums: Iegūstiet visu produktu nosaukumus no kategorijas "Augļi un dārzeņi".
+
+Grūts Līmenis
+
+  Uzdevums: Iegūstiet visu produktu nosaukumus un to cenas no visām produktu kategorijām, un saglabājiet tos kā sarakstu ar vārdnīcām, kur katra vārdnīca satur nosaukums un cena atslēgas.
+  
+  Uzdevums: Iegūstiet reklāmas piedāvājuma tekstu un saiti no id="reklama" div bloka.
