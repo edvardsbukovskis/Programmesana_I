@@ -1,0 +1,19 @@
+Uzdevumi darbam ar r64vsk.lv HTML kodu
+
+Viegls Līmenis
+
+Uzdevums: Iegūstiet skolas nosaukumu, kas atrodas <title> tagā.
+
+Uzdevums: Iegūstiet moto tekstu, kas atrodas ar klasi r64-moto.
+
+Vidējs Līmenis
+
+Uzdevums: Iegūstiet visas saites no augšējās izvēlnes (top menu). Jums ir jāiegūst gan saišu teksti, gan href atribūti. Rezultātam jābūt sarakstam ar vārdnīcām, kur katra vārdnīca satur teksts un saite.
+
+Uzdevums: Iegūstiet visu aktuālo ziņu virsrakstus no mājaslapas galvenās lapas. Virsraksti ir <h3> tagos ar klasi media-heading headline-title sadaļā "Aktualitātes".
+
+Grūts Līmenis
+
+Uzdevums: Iegūstiet visu stundu izmaiņu sarakstu. Stundu izmaiņas ir iekļautas <div> tagā ar klasi r64-events sadaļā "Stundu izmaiņas". Iegūstiet visu tekstu no šī div bloka.
+
+Uzdevums: Iegūstiet visu galerijas bilžu avotu saites ( src atribūtus). Galerijas bildes atrodas <div> tagā ar klasi gallery un katra bildes saite ir <img> taga src atribūts.
