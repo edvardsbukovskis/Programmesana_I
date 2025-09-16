@@ -50,7 +50,3 @@ In the Wizard class, write a method called .get_average_power().
 This method should go through the wizard's spellbook and return the average power_level of all their learned spells.
 (Hint: What should happen if a wizard hasn't learned any spells yet? The method should return 0 to avoid errors.)
 
-
-Integrates the "Next Steps": It takes the suggestions from your original step 8 and makes them part of the core assignment, giving the students a more complete and satisfying project to finish.
-
-No Harder: The logic required to solve the problems is identical to the original exercise. Only the names have been changed.
