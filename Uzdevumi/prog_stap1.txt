@@ -1,37 +1,56 @@
-1.
-Define a class named Student that will be our data model at Jan van Eyck High School and Conservatory.
 
-Add a constructor for Student. Have the constructor take in two parameters: a name and a year. Save those two as attributes .name and .year.
-2.
-Create three instances of the Student class:
+Exercise: The Arcane Academy of Object-Oriented Magic
+Welcome, new Headmaster! Your first task at our prestigious academy is to set up a new digital system to track our young wizards and the spells they've learned. You'll use your object-oriented programming magic to build this system from scratch.
 
-Roger van der Weyden, year 10
-Sandro Botticelli, year 12
-Pieter Bruegel the Elder, year 8
-Save them into the variables roger, sandro, and pieter.
+Part 1: The Wizard Roster
+First, we need a way to represent our wizards in the system.
+Define the Wizard Class:
+Create a class named Wizard. This will be our data model for each student at the academy.
+Add a constructor (__init__) that takes two parameters: name and house (e.g., "House of the Griffin", "House of the Serpent").
+Inside the constructor, save these parameters as attributes: self.name and self.house.
+Enroll the First Wizards:
+Create three instances of the Wizard class to represent our new students:
+Elara, from the "House of the Griffin"
+Lyron, from the "House of the Serpent"
+Bren, from the "House of the Badger"
+Save these instances into variables named elara, lyron, and bren.
 
-3.
-Create a Grade class, with .minimum_passing as an attribute set to 65.
+Part 2: The Ancient Book of Spells
+A wizard is nothing without their spells! Now, let's create a way to define a spell.
+Define the Spell Class:
+Create a class named Spell.
+Add a class attribute named MINIMUM_POWER_LEVEL and set it to 50. A spell is only considered "mastered" if its power level is at least this high.
+Give Spells Their Properties:
+Add a constructor to the Spell class.
+The constructor should take two parameters: name (like "Fireball" or "Invisibility") and power_level.
+Assign these to self.name and self.power_level.
 
-4.
-Give Grade a constructor. Take in a parameter score and assign it to self.score.
+Part 3: Teaching the Wizards
+Now it's time to connect our wizards with the spells they learn.
+Give Each Wizard a Spellbook:
+Go back to the Wizard class constructor.
+Inside the __init__ method, add a new attribute self.spellbook and initialize it as an empty list []. This will hold all the Spell objects a wizard has learned.
+Create a learn_spell Method:
+Add a method to the Wizard class called learn_spell. This method should take one parameter, spell.
+Inside the method, check if the provided spell is actually an instance of the Spell class.
+If it is, add the spell object to the wizard's spellbook list.
+If it's not a Spell object, the method should do nothing.
+Bren's First Lesson:
+Create a new instance of the Spell class for the spell "Summon Familiar," with a power_level of 75.
+Use the .learn_spell() method to add this new spell to bren's spellbook.
 
-5.
-In the body of the constructor for Student, declare self.grades as an empty list.
+Part 4: Assessing Their Power (Your Turn to Build!)
+Excellent! The foundation of our academy's system is built. You’ve defined how Wizards and Spells exist and interact. Now, let's add some useful features to see what our students can do.
+Please implement the following methods:
+Is a Spell Mastered?
+In the Spell class, write a method called .is_mastered().
+This method should return True if the spell's .power_level is greater than or equal to the MINIMUM_POWER_LEVEL, and False otherwise.
+Calculate a Wizard's Average Power:
+In the Wizard class, write a method called .get_average_power().
+This method should go through the wizard's spellbook and return the average power_level of all their learned spells.
+(Hint: What should happen if a wizard hasn't learned any spells yet? The method should return 0 to avoid errors.)
 
-6.
-Add an .add_grade() method to Student that takes a parameter, grade.
 
-.add_grade() should verify that grade is of type Grade and if so, add it to the Student‘s .grades.
+Integrates the "Next Steps": It takes the suggestions from your original step 8 and makes them part of the core assignment, giving the students a more complete and satisfying project to finish.
 
-If grade isn’t an instance of Grade then .add_grade() should do nothing.
-
-7.
-Create a new Grade with a score of 100 and add it to pieter‘s .grades attribute using .add_grade().
-
-8.
-Great job! You’ve created two classes and defined their interactions. This is object-oriented programming! From here you could:
-
-Write a Grade method .is_passing() that returns whether a Grade has a passing .score.
-Write a Student method .get_average() that returns the student’s average score.
-Add an instance variable to Student that is a dictionary called .attendance, with dates as keys and booleans as values that indicate whether the student attended school that day.
+No Harder: The logic required to solve the problems is identical to the original exercise. Only the names have been changed.
