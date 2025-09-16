@@ -50,3 +50,21 @@ In the Wizard class, write a method called .get_average_power().
 This method should go through the wizard's spellbook and return the average power_level of all their learned spells.
 (Hint: What should happen if a wizard hasn't learned any spells yet? The method should return 0 to avoid errors.)
 
+
+
+
+1. Klase Wizard - (3 punkti)
+1p: Ir definēta klase Wizard ar konstruktoru (__init__), kas pieņem name un house.
+1p: Konstruktorā tiek izveidoti un saglabāti atribūti self.name un self.house.
+1p: Ir pareizi izveidoti trīs Wizard objekti (elara, lyron, bren) ar norādītajiem datiem.
+2. Klase Spell - (2 punkti)
+1p: Ir definēta klase Spell ar klases atribūtu MINIMUM_POWER_LEVEL = 50.
+1p: Konstruktors pieņem name un power_level un saglabā tos kā atribūtus.
+3. Klašu Sadarbība - (3 punkti)
+1p: Wizard konstruktoram ir pievienots tukšs saraksts self.spellbook.
+1p: Wizard klasei ir metode .learn_spell(), kas pārbauda, vai saņemtais objekts ir Spell instance.
+1p: Metode .learn_spell() pievieno burvestību sarakstam spellbook tikai tad, ja pārbaude ir veiksmīga.
+4. Papildu Metodes - (3 punkti)
+1p: Spell klasē ir metode .is_mastered(), kas pareizi atgriež True vai False.
+1p: Wizard klasē ir metode .get_average_power(), kas aprēķina vidējo spēka līmeni no spellbook.
+1p: Metode .get_average_power() korekti atgriež 0, ja burvja spellbook ir tukšs.
