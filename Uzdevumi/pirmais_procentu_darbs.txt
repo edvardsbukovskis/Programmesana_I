@@ -5,14 +5,18 @@ Darbs ir nododams vienā failā.
 
 Teorētiskie jautājumi:
 
-1. Kas ir datu tips? Nosauciet vismaz 3 dažādus datu tipus C++ un dodiet piemērus, kā tos var izmantot.
-2. Paskaidrojiet, kā strādā if-else nosacījums. Kādas ir vel citas nosacījumu konstrukcijas?
+1. Iedomājies, ka veido spēles varoni. Kādus datu tipus Tu izmantotu, lai saglabātu varoņa vārdu, dzīvību skaitu un informāciju, vai viņam ir bruņas? Paskaidro savu izvēli katram no tiem.
+2. Kā programma var "pieņemt lēmumus"? Īsi apraksti, kā darbojas if-else nosacījums un kādam mērķim izmanto else if.
 
+Praktiskais uzdevums: 
+Tu esi drosmīgs piedzīvojumu meklētājs, kurš atradis senu labirintu. Katrā labirinta istabā Tu atrodi monētas vai tās pazaudē! Tavs uzdevums ir uzrakstīt programmu, kas reģistrē Tavu atradumu.
 
-Praktiskais uzdevums:
-1. Nosacījumu pārbaude (if-else):
-Uzdevums: Uzrakstīt programmu, kurā lietotājs ievada veselu skaitli. Programma pārbauda, vai skaitlis ir pozitīvs, negatīvs vai vienāds ar nulli, un izvada attiecīgu ziņu. Piemēram:
+Uzdevums:
+Uzraksti C++ programmu, kas veic sekojošas darbības:
+Sagaida lietotāju ar tekstu, piemēram: Esi sveicināts, dārgumu medniek! Kas Tev šoreiz gadījās ceļā?
+Palūdz lietotājam ievadīt veselu skaitli (pozitīvu, negatīvu vai nulli). Šis skaitlis apzīmē atrastās vai zaudētās zelta monētas.
 
-"Skaitlis ir pozitivs."
-"Skaitlis ir negativs."
-"Skaitlis ir nulle."
+Izmantojot if-else if-else konstrukciju, programma pārbauda ievadīto skaitli:
+Ja skaitlis ir lielāks par 0, programma izvada uz ekrāna: Apsveicu! Tu atradi [skaitlis] zelta monētas!
+Ja skaitlis ir mazāks par 0, programma izvada: Ak, nē! Tu iekriti lamatās un pazaudēji [skaitlis] zelta monētas!
+Ja skaitlis ir vienāds ar 0, programma izvada: Šī istaba bija tukša. Jāturpina meklējumi.
