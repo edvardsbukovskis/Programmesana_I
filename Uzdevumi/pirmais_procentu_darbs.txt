@@ -20,3 +20,26 @@ Izmantojot if-else if-else konstrukciju, programma pārbauda ievadīto skaitli:
 Ja skaitlis ir lielāks par 0, programma izvada uz ekrāna: Apsveicu! Tu atradi [skaitlis] zelta monētas!
 Ja skaitlis ir mazāks par 0, programma izvada: Ak, nē! Tu iekriti lamatās un pazaudēji [skaitlis] zelta monētas!
 Ja skaitlis ir vienāds ar 0, programma izvada: Šī istaba bija tukša. Jāturpina meklējumi.
+
+
+Teorētiskā daļa (Kopā 4 punkti)
+1. jautājums: (2 punkti)
+1p: Par katru ir izvēlēts un nosaukts atbilstošs C++ datu tips.
+1p: Par katru izvēli ir sniegts loģisks paskaidrojums, kāpēc tieši šis datu tips ir piemērots.
+
+2. jautājums: (2 punkti)
+1p: Ir korekti un saviem vārdiem paskaidrots, kā darbojas if-else konstrukcija.
+1p: Ir paskaidrots, kādam mērķim tiek izmantots else if.
+
+Praktiskā daļa (Kopā 6 punkti)
+Programmas pamats un datu ievade: (2 punkti)
+1p: Programma ir pareizi strukturēta, tā kompilējas un darbojas bez kļūdām.
+1p: Programma sagaida lietotāju ar ziņu un veiksmīgi nolasa lietotāja ievadīto veselo skaitli mainīgajā.
+
+Nosacījumu loģika: (3 punkti)
+1p: Ir pareizi izmantots if, lai pārbaudītu, vai skaitlis ir pozitīvs.
+1p: Ir pareizi izmantots else if, lai pārbaudītu, vai skaitlis ir negatīvs.
+1p: Ir pareizi izmantots else, lai apstrādātu gadījumu, kad skaitlis ir nulle.
+
+Rezultāta izvade: (1 punkts)
+1p: Programmas izvadītās ziņas katrā no trim gadījumiem (pozitīvs, negatīvs, nulle) atbilst uzdevumā dotajiem piemēriem, ieskaitot ievadītā skaitļa attēlošanu.
